@@ -1,0 +1,106 @@
+
+EJERCICIO 1
+
+Trabajador (1) 
+id (SERIAL PK)
+name VARCHAR(20)
+
+Departamento(N)
+name VARCHAR(20)
+worker_id (INTEGER FK)
+
+Liquidaciones (N)
+name VARCHAR(20)
+worker_id (INTEGER FK)
+
+--------------------------
+
+EJERCICIO 2
+
+*Alumno (1)
+id (SERIAL PK)
+name VARCHAR(20)
+
+Prueba (N)
+id (SERIAL PK)
+name VARCHAR(20)
+score INTEGER
+stundent_id (INTEGER FK)
+
+Profesor (1)
+id (SERIAL PK)
+name VARCHAR(20)
+test_id (INTEGER FK)
+
+*Curso (N)
+name VARCHAR(20)
+student_id (INTEGER FK)
+
+---------------------------
+
+EJERCICIO 3
+
+*Candidato (1)
+id (SERIAL PK)
+name VARCHAR(20)
+
+Votos (N)
+Cantidad INTEGER
+candidato_id (INTEGER FK)
+mesa_id (INTEGER FK)
+
+Mesa (1)
+id (SERIAL PK)
+name VARCHAR(20)
+
+*Partido (N)
+name VARCHAR(20)
+candidato_id (INTEGER FK)
+
+--------------------------
+
+EJERCICIO 4
+
+Pelicula (1)
+id (SERIAL PK)
+name VARCHAR(20)
+category_id (INTEGER FK)
+
+TaggedMovie (N)
+movie_id (INTEGER FK)
+tag_id (INTEGER FK)
+
+Tags (1)
+id (SERIAL PK)
+tag VARCHAR(20)
+
+Categoria (N)
+id (SERIAL PK)
+name VARCHAR (20)
+
+---------------------------
+
+EJERCICIO 5
+
+Cliente (1)
+id (SERIAL PK)
+name VARCHAR(20)
+
+Factura (1)
+id (SERIAL PK)
+name VARCHAR(20)
+
+FacturaProductos (N)
+factura_id (INTEGER FK)
+productos_id (INTEGER FK)
+
+Productos (1)
+id (SERIAL PK)
+name VARCHAR(20)
+
+Bodega (1)
+id (SERIAL PK)
+name VARCHAR(20)
+
+---------------------------
+
